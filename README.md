@@ -2,7 +2,7 @@
 
 Real-time respiratory rate and heart rate monitor built on a Raspberry Pi Zero 2W using a MAX30102 PPG sensor. The device extracts breathing rate and heart rate from a wrist-worn optical sensor using a signal processing pipeline running directly on the Pi, streaming live vitals to a React dashboard via WebSocket.
 
-**Demo:** [YouTube](https://youtube.com) <!-- replace with your link -->
+**Demo:** [YouTube](https://youtube.com/shorts/RK-HrU1LweM)
 
 ---
 
