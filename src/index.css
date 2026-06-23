@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Double-beat heartbeat matching real cardiac rhythm */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1);    }
+  10%       { transform: scale(1.30); }
+  20%       { transform: scale(1.05); }
+  32%       { transform: scale(1.20); }
+  50%       { transform: scale(1.0);  }
+}
+
+/* Breathing wave animation on the RR icon */
+@keyframes breathe {
+  0%, 100% { transform: scaleY(1);    opacity: 0.9; }
+  50%       { transform: scaleY(1.18); opacity: 1;   }
+}
+
+/* Scanline overlay for monitor effect */
+@keyframes scanline {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.scanline::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  z-index: 50;
+}
